@@ -1,0 +1,96 @@
+*{
+    background: papayawhip;
+}
+div p{
+    background: pink;
+}
+div + section{
+    background: lawngreen;
+}
+div ~ p{
+    background: lightsalmon;
+}
+.titulo{
+    color: blue;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid hotpink;
+    margin: 20px;
+}
+#titulo2{
+    color: royalblue;
+}
+a[href=""]{
+    color: slateblue;
+}
+p{
+    color: lime;
+}
+p::first-letter{
+    color: purple;
+}
+p::before {
+    content: "✨";
+}
+p:hover::before {
+    content: "💅";
+}
+p:hover {
+    color: maroon;
+}
+div p:nth-child(2){
+    color: mediumblue;
+}
+#platzi{
+    color: red;
+}
+.master{
+    color: royalblue;
+}
+.container2{
+    display: flex;
+    background: rgb(213, 255, 251);
+    justify-content: center;
+    /*align-items: center;*/
+    height: 200px;
+    flex-direction: column;
+}
+.item1{
+     width: 30px;
+     height: 30px;
+     background: purple;   
+}
+.container2 .item1:nth-child(2n + 1){
+background: darkblue;
+}
+
+.container{
+    display: grid;
+    width: 400px;
+    height: 400px;
+    background: chartreuse;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+div .item{
+    width: 30px;
+    height: 30px;
+    background: red;   
+}
+.container .item:nth-child(1){
+    grid-column: 1 / 2;
+}
+.container .item:nth-child(2){
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.container .item:nth-child(3){
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+.container .item:nth-child(4){
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+}
